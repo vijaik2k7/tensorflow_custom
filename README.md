@@ -2,7 +2,7 @@
 ## Summary
 This program builts a custom Tensorflow Estimator API which is trained and tested on a retail banking application.
 ## Program
-Q2_Estimator_API.py (for training and running locally without serving)
+Estimator_API.py (for training and running locally without serving)
 
 trainer_custom/model.py (file that contains the tf model and function to serve the model on the Cloud ML Engine)
 
@@ -33,7 +33,7 @@ trainer_custom/task.py (experiment file that trains, evaluates and serves the mo
 
 #### For Training on Cloud ML Engine:
 
-Git clone the repository (git clone https://github.com/vijaik2k7/deloitte_ml_spec.git). Navigate to Q2 - Estimator API Model. Follow steps below:
+Git clone the repository. Navigate to Q2 - Estimator API Model. Follow steps below:
 
 `export GCS_TRAIN_FILE=gs://ml_spec/data/bank-full-v4-train.csv`
 
