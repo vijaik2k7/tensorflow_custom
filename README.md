@@ -33,17 +33,17 @@ trainer_custom/task.py (experiment file that trains, evaluates and serves the mo
 
 #### For Training on Cloud ML Engine:
 
-Git clone the repository. Navigate to Q2 - Estimator API Model. Follow steps below:
+Git clone the repository. Follow steps below:
 
-`export GCS_TRAIN_FILE=gs://ml_spec/data/bank-full-v4-train.csv`
+`export GCS_TRAIN_FILE=gs://****/data/bank-full-v4-train.csv`
 
-`export GCS_EVAL_FILE=gs://ml_spec/data/bank-full-v4-test.csv`
+`export GCS_EVAL_FILE=gs://****/data/bank-full-v4-test.csv`
 
 `export SCALE_TIER=BASIC`
 
 `export JOB_NAME=bank_custom_estimator_<timestamp>`
 
-`export GCS_JOB_DIR=gs://ml_spec/bank_custom_estimator_<timestamp>`
+`export GCS_JOB_DIR=gs://****/bank_custom_estimator_<timestamp>`
 
 `gcloud ml-engine jobs submit training $JOB_NAME --scale-tier $SCALE_TIER \
     --runtime-version 1.4 --job-dir $GCS_JOB_DIR \
